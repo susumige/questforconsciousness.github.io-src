@@ -1,0 +1,7 @@
+  <hr>
+  <p><i class="fa fa-calendar"></i> Posted on {{ article.date.strftime("%B %d, %Y") }}</p>
+  <p><i class="fa fa-tags"></i> Tags:
+  {% for tag in article.tags %}
+    <a href="/{{ tag.url }}" class="badge badge-primary">{{ tag }}</a>{{ "," if not loop.last }}
+  {% endfor %}
+  </p>

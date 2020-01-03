@@ -1,0 +1,12 @@
+<h1>
+  {{ article.title }}
+</h1>
+{% include 'notebook-meta.html' %}
+<div class='article_content'>
+  {{ article.content }}
+</div>
+<aside>
+  {% if DISQUS_SITENAME %}
+    {% include 'comments.html' %}
+  {% endif %}
+</aside>

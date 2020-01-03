@@ -1,0 +1,10 @@
+  <!-- Recent articles section -->
+  <div class="row">
+    <div class="col-md-12">
+      <ul class="timeline list-unstyled">
+        {% for article in articles if article.category.name in ('microblog') %}
+          {% include 'microblog-info.html' %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>

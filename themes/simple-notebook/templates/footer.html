@@ -1,0 +1,8 @@
+        <div class="container text-center my-3">
+          <ul class="soc-icons list-inline text-uppercase font-weight-bold text-monospace m-0">
+            {% for title,url in SOCIAL %}
+              <li class="list-inline-item"><a class="text-dark" href="{{ url }}"><i class="{% if title.lower() == 'rss' %} fas {% else %} fab {% endif %} fa-fw fa-{{ title.lower() }}" aria-hidden="true"></i>{{ title }}</a></li>
+            {% endfor %}
+          </ul>
+          <div class="text-monospace">Copyright &copy; {{ SITENAME }}, <time><script>document.write(new Date().getFullYear())</script></time>.</div>
+        </div>

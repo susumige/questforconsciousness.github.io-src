@@ -1,0 +1,31 @@
+        <div class="container text-monospace">
+          <a class="navbar-brand" href="/"><img src="/logo.png" height="32" width="32"><span class="ml-2 d-none d-lg-inline-block">{{ SITENAME }}</span></a>
+          <button class="navbar-toggler collapsed mb-2" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+            <form class="navbar-form ml-auto pr-2" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);">
+              <input class="form-control search-query bg-dark text-white border-secondary" name="q" id="tipue_search_input" placeholder="Search..." required autocomplete="off" type="text">
+            </form>
+            <ul class="navbar-nav">
+              {% for title,url in MENUITEMS %}
+                {% if url is string %}
+                  <li class="nav-item"><a class="nav-link text-white" href="{{ url }}">{{ title }}</a></li>
+                {% elif url is iterable %}
+                  <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link text-white" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="dropdownMenuButton">More<span class="caret"></span></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      {%- for title,item_url in url -%}
+                        {% if title == 'Divider' %}
+                          <div class="dropdown-divider"></div>
+                        {% else %}
+                          <a class="dropdown-item" href="{{ item_url }}">{{ title }}</a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>

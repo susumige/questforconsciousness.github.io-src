@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} - {{ article.category }}{% endblock %}
+
+{% block head %}
+  {{ super() }}
+  {% if article.description %}
+    <meta name="description" content="{{article.description}}" />
+  {% endif %}
+
+  {% for tag in article.tags %}
+    <meta name="tags" content="{{tag}}" />
+  {% endfor %}
+
+{% endblock %}
+
+{% block content %}
+
+  {% if category.name == 'qutips' %}
+    {% include 'qutip.html' %}
+  {% elif category.name == 'microblog' %}
+    {% include 'microblog.html' %}
+  {% elif category.name == 'books' %}
+    {% include 'book.html' %}
+  {% else %}
+    {% include 'notebook.html' %}
+  {% endif %}
+{% endblock %}

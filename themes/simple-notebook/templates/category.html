@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 class="mb-5 text-capitalize">{{ category.name }}</h1>
+  {% if category.name == 'qutips' %}
+    {% include 'qutips.html' %}
+  {% elif category.name == 'microblog' %}
+    {% include 'microblogs.html' %}
+  {% elif category.name == 'books' %}
+    {% include 'books.html' %}
+  {% else %}
+    {% include 'archive-by-year.html' %}
+  {% endif %}
+{% endblock content %}

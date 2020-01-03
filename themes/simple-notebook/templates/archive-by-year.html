@@ -1,0 +1,16 @@
+  {% for year, articles in dates|groupby( 'date.year' )|sort(reverse=True) %}
+    <h2>{{ year }}</h2>
+    <div class="row">
+      {% for article in articles %}
+        {% if article.category.name == 'notebooks' %}
+          <div class="col-md-6 border-left">
+            <ul class="timeline list-unstyled">
+              {% include 'notebook-info.html' %}
+            </ul>
+          </div>
+        {% endif %}
+      {% else %}
+        <li>Coming soon.</li>
+      {% endfor %}
+    </div>
+  {% endfor %}

@@ -1,0 +1,9 @@
+      <li class="mb-5">
+        <div>
+          <a href="/{{ article.url }}">{{ article.date.strftime("%B %d, %Y") }}</a>
+        </div>
+        <div>
+          <a href="/{{ article.url }}" class="font-weight-bold">{{ article.title }}</a>
+        </div>
+        <div>{{ article.summary }}</div>
+      </li>

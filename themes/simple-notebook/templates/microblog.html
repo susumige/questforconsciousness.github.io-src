@@ -1,0 +1,10 @@
+<h1>{{ article.date.strftime("%B %d, %Y") }}</h1>
+<hr>
+<div class='article_content'>
+  {{ article.content }}
+</div>
+<aside>
+  {% if DISQUS_SITENAME %}
+    {% include 'comments.html' %}
+  {% endif %}
+</aside>
