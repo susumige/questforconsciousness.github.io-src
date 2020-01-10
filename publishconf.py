@@ -21,4 +21,4 @@ RELATIVE_URLS = False
 # Following items are often useful when publishing
 
 #DISQUS_SITENAME = ""
-GOOGLE_ANALYTICS = "UA-145420371-1"
+GOOGLE_ANALYTICS = "UA-588692-16"

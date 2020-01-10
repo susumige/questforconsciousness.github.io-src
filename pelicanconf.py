@@ -54,11 +54,10 @@ MENUITEMS = [
 
 # Social widget
 SOCIAL = (
-    # ('Slack', '#'),
-    ('Facebook', '#'),
-    ('Twitter', '#'),
-    ('Reddit', 'https://www.reddit.com/user/'),
-    ('Github', 'https://github.com/'),
+    ('Facebook', 'https://www.facebook.com/quest4consc'),
+    ('Twitter', 'https://twitter.com/quest4consc'),
+    ('Reddit', 'https://www.reddit.com/user/susumige'),
+    ('Github', 'https://github.com/susumige'),
     ('Rss', '/pages/rss-feed.html'),
 )
 
