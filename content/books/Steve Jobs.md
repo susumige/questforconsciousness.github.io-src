@@ -5,3 +5,4 @@ Cover: images/books/steve-jobs.jpg
 Book_author: Walter Isaacson
 Summary: Book review - Steve Jobs by Walter Isaacson
 
+Steve Jobs Biography!
