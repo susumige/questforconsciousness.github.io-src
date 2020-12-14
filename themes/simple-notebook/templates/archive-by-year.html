@@ -3,7 +3,7 @@
     <div class="row">
       {% for article in articles %}
         {% if article.category.name == 'notebooks' %}
-          <div class="col-md-6 border-left">
+          <div class="col-md-6">
             <ul class="timeline list-unstyled">
               {% include 'notebook-info.html' %}
             </ul>

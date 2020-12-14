@@ -6,10 +6,10 @@ AUTHOR = u'Ilija'
 SITENAME = u'Quest for Consciousness'
 SITEURL = 'http://127.0.0.1:8000'
 SITETITLE = 'Create more time, not money...'
-SITEBLURB = ''
+SITEBLURB = 'Time is the ultimate success, not money. <br/>Don\'t use your time to make more money, use your money to make more time.'
 SITE_SUMMARY = 'Technological singularity, Quantum computing & Consciousness mapping'
 RECENT_MICROBLOG_ARTICLES_NUMBER = 6;
-RECENT_NOTEBOOKS_ARTICLES_NUMBER = 3;
+RECENT_NOTEBOOKS_ARTICLES_NUMBER = 4;
 DISQUS_SITENAME = "questforconsciousness"
 DISQUS_DISPLAY_COUNTS = False
 TAGLINE = 'Quest for Consciousness'
@@ -44,8 +44,7 @@ MENUITEMS = [
     ('Qutips', '/qutips.html'),
     ('More', [
         # ('Singularity', '/pages/singularity.html'),
-        ('Books', '/books.html'),
-        ('Divider', '#'),
+        # ('Divider', '#'),
         # ('MOOC', '/pages/mooc.html'),
         ('About', '/pages/about.html'),
         ('Terms & Privacy Policy', '/pages/terms-privacy-policy.html')
@@ -54,9 +53,9 @@ MENUITEMS = [
 
 # Social widget
 SOCIAL = (
-    ('Facebook', 'https://www.facebook.com/quest4consc'),
+    # ('Facebook', 'https://www.facebook.com/quest4consc'),
     ('Twitter', 'https://twitter.com/quest4consc'),
-    ('Reddit', 'https://www.reddit.com/user/susumige'),
+    # ('Reddit', 'https://www.reddit.com/user/susumige'),
     ('Github', 'https://github.com/susumige'),
     ('Rss', '/pages/rss-feed.html'),
 )

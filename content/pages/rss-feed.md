@@ -5,5 +5,4 @@ Date: 2019-07-28 12:00
 
 [Notebooks](/feeds/notebooks.atom.xml)  
 [Microblog](/feeds/microblog.atom.xml)  
-[Snippets](/feeds/snippets.atom.xml)  
-[Book reviews](/feeds/books.atom.xml)
+[Qutips](/feeds/qutips.atom.xml)
