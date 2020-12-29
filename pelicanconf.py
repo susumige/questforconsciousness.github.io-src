@@ -18,6 +18,7 @@ PATH = 'content'
 
 STATIC_PATHS = [
     'images',
+    'code',
     'extra/favicon.ico',
     'extra/logo.png'
 ]

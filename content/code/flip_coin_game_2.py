@@ -2,8 +2,7 @@ from qiskit import QuantumCircuit
 from qiskit import IBMQ
 from qiskit.compiler import transpile, assemble
 
-tosses = 75
-qc_list = []
+tosses = 15
 
 
 def input_guess():
@@ -34,14 +33,14 @@ def main():
     qc.h(0)  # applying Hadamard gate
     qc.measure_all()
 
-    # After creating qc_list
+    # Execute on IBMQ
     provider = IBMQ.get_provider(group='open')
     backend = provider.get_backend('ibmq_essex')
     transpiled_circs = transpile(qc, backend=backend)
     qobjs = assemble(transpiled_circs, backend=backend, shots=tosses)
     job_info = backend.run(qobjs)
 
-    # To get the results
+    # Measure the results
     result = job_info.result().get_counts()
     heads = result['0']
     tails = result['1']

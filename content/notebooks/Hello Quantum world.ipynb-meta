@@ -1,6 +1,5 @@
-Title: Hello quantum world
-Date: 2019-10-10
-Modified: 2019-10-10
-Summary: This is a Hello world notebook and my entry into quantum programming world.
+Title: Hello Quantum world
+Date: 2020-09-10
+Summary: This is a Hello world notebook and my entry into quantum programming world. I will create a simple quantum circuit with two quantum and two classical qubits.
 Tags: qiskit, ibm
 Category: notebooks

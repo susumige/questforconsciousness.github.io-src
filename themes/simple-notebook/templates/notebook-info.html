@@ -2,8 +2,8 @@
         <div>
           <a href="/{{ article.url }}" class="font-weight-bold">{{ article.title }}</a>
         </div>
-        <div>
-          <a href="/{{ article.url }}">{{ article.date.strftime("%B %d, %Y") }}</a>
-        </div>
+        <small class="text-muted">
+          {{ article.date.strftime("%B %d, %Y") }}
+        </small>
         <div>{{ article.summary }}</div>
       </li>

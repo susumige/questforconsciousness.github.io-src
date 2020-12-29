@@ -1,5 +1,5 @@
-Date: 2020-03-26
+Date: 2020-10-26
 Title: The Pauli X-gate
-Summary: The Pauli X-gate
+Summary: The Pauli X-gate is a simple negation operation on qubits. It corresponds to a classical NOT gate or logical NOT operator.
 Tags: qiskit
 Category: qutips

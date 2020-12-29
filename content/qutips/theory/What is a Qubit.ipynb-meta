@@ -1,5 +1,5 @@
 Title: What is a Qubit?
-Date: 2020-03-24
-Summary: Explanation what is a quantum bit or qubit
+Date: 2020-09-24
+Summary: What is different between a quantum bit and a classical bit? In contrast to a classic, a quantum bit can be prepared in what is called a superposition state, which is somewhere in between 0 and 1.
 Tags: theory
 Category: qutips

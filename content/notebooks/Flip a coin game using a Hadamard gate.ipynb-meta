@@ -1,0 +1,5 @@
+Title: Flip a coin game using a Hadamard gate
+Date: 2020-12-15
+Summary: Flip a coin game on quantum computer with three different approaches. First approach is done using a simulator, and two other using IBMQ backend.
+Tags: qiskit, ibm, flip coin, game, quantum game
+Category: notebooks

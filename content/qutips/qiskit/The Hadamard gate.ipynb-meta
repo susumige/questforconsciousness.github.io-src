@@ -1,5 +1,5 @@
-Date: 2020-03-27
+Date: 2020-11-27
 Title: The Hadamard gate
-Summary: The Hadamard gate
+Summary: The Hadamard gate is the simplest method for generating a random result (bit) in a qubit. It can be used for creating quantum coin-flipping game.
 Tags: qiskit
 Category: qutips

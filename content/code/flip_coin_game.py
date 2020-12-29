@@ -1,7 +1,7 @@
 from qiskit import QuantumCircuit, Aer, execute
 import numpy as np
 
-tosses = 75
+tosses = 15
 
 
 def input_guess():

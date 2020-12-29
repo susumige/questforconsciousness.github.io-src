@@ -2,7 +2,7 @@ from qiskit import QuantumCircuit
 from qiskit import IBMQ
 from qiskit.compiler import transpile, assemble
 
-tosses = 75 # The number of experiments in the Qobj (101) is higher than the number of experiments supported by the device (75)
+tosses = 15 # The number of experiments in the Qobj (101) is higher than the number of experiments supported by the device (75)
 qc_list = []
 
 
@@ -36,14 +36,14 @@ def main():
         qc.measure_all()
         qc_list.append(qc)
 
-    # After creating qc_list
+    # Execute a list of circuits
     provider = IBMQ.get_provider(group='open')
     backend = provider.get_backend('ibmq_london')
     transpiled_circs = transpile(qc_list, backend=backend)
-    qobjs = assemble(transpiled_circs, backend=backend, shots=tosses)
+    qobjs = assemble(transpiled_circs, backend=backend)
     job_info = backend.run(qobjs)
 
-    # To get the results
+    # Measure the results
     for circ_index in range(len(transpiled_circs)):
         result = job_info.result().get_counts(transpiled_circs[circ_index])
         print(result)
